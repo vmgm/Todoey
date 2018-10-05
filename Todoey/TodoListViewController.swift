@@ -63,7 +63,7 @@ class TodoListViewController: UITableViewController {
             if textField.text!.count > 0 {
                 self.itemArray.append(textField.text!)
                 
-                self.defaults.setValue(self.itemArray, forKey: "TodoListArray")
+                self.defaults.set(self.itemArray, forKey: "TodoListArray")
                 
                 self.tableView.reloadData()
             }
